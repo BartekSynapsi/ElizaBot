@@ -226,7 +226,7 @@
     <div class="student-list">
         <ul class="list-group">
             <li class="list-group-item">Wykonali</li>
-            <li class="list-group-item"> <h5>Ada Mucha</h5> <h5>Zofia Fraś</h5> <h5>Bartek Karwacki</h5> <h5>Damian Bregier</h5></li>
+            <li class="list-group-item"> <h5>Ada Mucha</h5> <h5>Zofia Fraś</h5> <h5>Bartosz Karwacki</h5> <h5>Damian Bregier</h5></li>
         </ul>
     </div>
     <div class="chat_window">
@@ -301,7 +301,7 @@
 
         function sendMessageToBot(message) {
             $.post('/bot/', {message: message}, function(data, status){
-                sendMessage(data['test'], 'left')
+                sendMessage(data['reply'], 'left')
             });
         }
 
