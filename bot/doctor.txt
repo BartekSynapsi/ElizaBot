@@ -1,4 +1,4 @@
-initial: Jak sie masz.  Jaki masz problem.
+initial: Jak sie masz?  Jaki masz problem?
 final: Do widzenia.  Dziekuje Ci za rozmowe.
 quit: pa
 quit: do widzenia
@@ -9,7 +9,6 @@ pre: nie bede
 pre: przypominam pamietam
 pre: marzyl marze
 pre: marzenia marzenie
-pre: moze mozliwe
 pre: jak co
 pre: kiedy co
 pre: na pewno tak
@@ -45,8 +44,8 @@ key: xnone
 key: przepraszam
   decomp: *
     reasmb: Prosze, nie przepraszaj.
-    reasmb: Przeprosiny nie są konieczne.
-    reasmb: Mowilam ci, ze przeprosiny nie są wymagane.
+    reasmb: Przeprosiny nie sa konieczne.
+    reasmb: Mowilam ci, ze przeprosiny nie sa wymagane.
 key: przepraszac
   decomp: *
     reasmb: goto przepraszam
@@ -104,7 +103,7 @@ key: francais
 key: italiano
   decomp: *
     reasmb: goto xforeign
-    reasmb: Jak wspomnialem wczesniej, nie znam włoskiego.
+    reasmb: Jak wspomnialem wczesniej, nie znam wloskiego.
 key: espanol
   decomp: *
     reasmb: goto xforeign
@@ -134,7 +133,7 @@ key: jestem
   decomp: *
     reasmb: Dlaczego mowisz 'jestem' ?
     reasmb: Nie zrozumialem tego.
-key: jestes
+key: are
   decomp: * jestem *
     reasmb: Dlaczego interesuje Cie czy jestem (2) lub tez nie ?
     reasmb: Czy wolalbys gdybym nie byl (2) ?
@@ -152,7 +151,7 @@ key: twoj
     reasmb: Co z twoim wlasnym  (2) ?
     reasmb: Czy martwi Cie czyjes (2) ?
     reasmb: Naprawde, moje (2) ?
-key: bylem 2
+key: was 2
   decomp: * bylem *
     reasmb: Co jesli byles (2) ?
     reasmb: Czy uwazasz, ze byles (2) ?
@@ -170,7 +169,7 @@ key: bylem 2
     reasmb: Jak myslisz ?
     reasmb: Byc moze bylem (2) .
     reasmb: Co jezeli bylem (2) ?
-key: ja
+key: i
   decomp: * ja @chce *
     reasmb: Co by to dla Ciebie znaczylo, jezeli dostalbys (3) ?
     reasmb: Czego wlasciwie chcesz (3) ?
@@ -192,7 +191,7 @@ key: ja
     reasmb: goto bylem
   decomp: * ja @przekonanie * ja *
     reasmb: Naprawde tak uwazasz ?
-    reasmb: Ale nie jesteś pewnie, ze (3) .
+    reasmb: Ale nie jestes pewnie, ze (3) .
     reasmb: Naprawde watpisz, ze (3) ?
   decomp: * ja * @przekonanie * ty *
     reasmb: goto ty
@@ -201,7 +200,7 @@ key: ja
     reasmb: Jak dlugo jestes (2) ?
     reasmb: Myslisz, ze to normalne, ze jestes (2) ?
     reasmb: Cieszysz sie, ze jestes (2) ?
-  decomp: * @nie mogę *
+  decomp: * @nie moge *
     reasmb: Jak sadzisz, dlaczego (3) ?
     reasmb: Sprobowales ?
     reasmb: Moze moglbys teraz (3) .
@@ -215,7 +214,7 @@ key: ja
     reasmb: Powiedz mi wiecej o tym uczuciu.
     reasmb: Czesto czujesz sie (2) ?
     reasmb: Lubisz czuc sie (2) ?
-    reasmb: Gdy czujesz sie (2) - o czym ci to przypomina ?
+    reasmb: Gdy czujesz sie (2) - o czym ci to przypomina?
   decomp: * ja * ty *
     reasmb: Moze w twoich marzeniach my (2) siebie nawzajem.
     reasmb: Chcialbys mnie (2) ?
@@ -269,7 +268,7 @@ key: moj 2
     reasmb: Opowiedz mi o twojej rodzinie.
     reasmb: Kto jeszcze w twojej rodzinie (4) ?
     reasmb: Twoj (3) ?
-    reasmb: Co jeszcze przychodzi ci do głowy, gdy myslisz o (3) ?
+    reasmb: Co jeszcze przychodzi ci do glowy, gdy myslisz o (3) ?
   decomp: * moj *
     reasmb: Twoj (2) ?
     reasmb: Dlaczego mowisz, ze twoj (2) ?
@@ -328,7 +327,7 @@ key: wszyscy 2
     reasmb: Kto, jezeli moge zapytac ?
     reasmb: Moze ktos wyjatkowy ?
     reasmb: Masz na mysli konkretna osobe, prawda ?
-    reasmb: Jak myślisz, o czym mówi ?
+    reasmb: Kogo masz konkretnie na mysli ?
 key: wszyscy 2
   decomp: *
     reasmb: goto wszyscy
