@@ -133,7 +133,7 @@ key: jestem
   decomp: *
     reasmb: Dlaczego mowisz 'jestem' ?
     reasmb: Nie zrozumialem tego.
-key: are
+key: sa
   decomp: * jestem *
     reasmb: Dlaczego interesuje Cie czy jestem (2) lub tez nie ?
     reasmb: Czy wolalbys gdybym nie byl (2) ?
@@ -151,7 +151,7 @@ key: twoj
     reasmb: Co z twoim wlasnym  (2) ?
     reasmb: Czy martwi Cie czyjes (2) ?
     reasmb: Naprawde, moje (2) ?
-key: was 2
+key: bylem 2
   decomp: * bylem *
     reasmb: Co jesli byles (2) ?
     reasmb: Czy uwazasz, ze byles (2) ?
@@ -169,14 +169,14 @@ key: was 2
     reasmb: Jak myslisz ?
     reasmb: Byc moze bylem (2) .
     reasmb: Co jezeli bylem (2) ?
-key: i
+key: ja
   decomp: * ja @chce *
-    reasmb: Co by to dla Ciebie znaczylo, jezeli dostalbys (3) ?
-    reasmb: Czego wlasciwie chcesz (3) ?
-    reasmb: Zalozmy, ze znajdziesz niedlugo (3) ?
-    reasmb: Co jezeli nigdy nie znajdziesz (3) ?
-    reasmb: Co znalezienie (3) znaczy dla Ciebie ?
-    reasmb: Co potrzeba (3) ma wspolnego z ta dyskusja ?
+    reasmb: Co by to dla Ciebie znaczylo, jezeli dostalbys  ?
+    reasmb: Czego wlasciwie chcesz  ?
+    reasmb: Zalozmy, ze znajdziesz niedlugo  ?
+    reasmb: Co jezeli nigdy nie znajdziesz  ?
+    reasmb: Co znalezienie znaczy dla Ciebie ?
+    reasmb: Co potrzeba  ma wspolnego z ta dyskusja ?
   decomp: * ja jestem * @smutny *
     reasmb: Przykro mi, ze jestes (3) .
     reasmb: Myslisz, ze ta rozmowa ci pomoze i nie bedziesz juz (3) ?
