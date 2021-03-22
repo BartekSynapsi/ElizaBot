@@ -170,7 +170,7 @@ key: bylem 2
     reasmb: Byc moze bylem (2) .
     reasmb: Co jezeli bylem (2) ?
 key: ja
-  decomp: * ja @chce *
+  decomp: * ja chce *
     reasmb: Co by to dla Ciebie znaczylo, jezeli dostalbys  ?
     reasmb: Czego wlasciwie chcesz  ?
     reasmb: Zalozmy, ze znajdziesz niedlugo  ?
