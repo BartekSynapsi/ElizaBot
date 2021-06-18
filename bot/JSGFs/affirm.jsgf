@@ -1,0 +1,6 @@
+#JSGF V1.0 UTF-8 pl;
+
+grammar affirm;
+
+public <affirm> = <affirms>;
+<affirms> = Zgadza się | chciałbym ją wypożyczyć | chciałabym ją wypożyczyć | To chciałabym ją zarezerować | To chciałbym ją zarezerować | Tak | Tak zgadza się | Poproszę;

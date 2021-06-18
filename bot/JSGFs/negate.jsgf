@@ -1,0 +1,7 @@
+#JSGF V1.0 UTF-8 pl;
+
+grammar negate;
+
+public <negate> = Nie <negates>;
+<negates> = wolno | można | chcę | chce | odpowiada mi | pasuję mi | pasuje mi | mogę | podam;
+public <negate_empty> = Nie;

@@ -1,0 +1,6 @@
+#JSGF V1.0 UTF-8 pl;
+
+grammar hello;
+
+public <hello> = <hellos>;
+<hellos> = Witam | Dzień dobry | Cześć | Siemka | Dobry wieczór | Hej | Hejka;

@@ -1,0 +1,22 @@
+#JSGF V1.0 UTF-8 pl;
+
+grammar reqmore;
+
+public <reqmore1> = Czy dostępna jest <lang> {lang} oraz <edition> {edition}*;
+public <reqmore2> = <edition> {edition};
+public <reqmore3> = <cost> {cost} tej książki*;
+public <reqmore4> = Czy w ostatnim czasie <new> {new}*;
+public <reqmore5> = Jaki jest <title> {title} <author> {author} i <year> {year} książki*;
+public <reqmore6> = Czy możesz powiedzieć mi coś więcej o <event> {event}*;
+public <reqmore7> = Proszę podać <book> {book}*;
+public <reqmore8> = Czy mogę jeszcze jakoś pomóc;
+
+<lang> = wyłącznie polska wersja językowa;
+<edition> = jakiego wydawnictwa | czy to jedyne wydanie;
+<cost> = ile wynosi koszt wypożyczenia;
+<new> = doszły jakieś nowe pozycje;
+<title> = tytuł;
+<author> = autor;
+<year>= rok wydania;
+<event> = dniu młodego czytelnika;
+<book> = o jaką książkę chodzi;

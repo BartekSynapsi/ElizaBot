@@ -1,0 +1,6 @@
+#JSGF V1.0 UTF-8 pl;
+
+grammar ack;
+
+public <ack> = <acks>;
+<acks> = czy to wszystko | czy coś jeszcze | coś dodatkowo | coś dodatkowego | czy to wystarczająco | tyle wystarczy;

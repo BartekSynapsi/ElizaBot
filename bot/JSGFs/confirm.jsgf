@@ -1,0 +1,39 @@
+#JSGF V1.0 UTF-8 pl;
+
+grammar confirm;
+public <potwierdzenie1> = Czy ta książka to <books> {books};
+public <potwierdzenie2> = Czy ta książka to <book> <author>;
+public <potwierdzenie3> = Ksiażka <books> {books} została wypożyczona;
+public <potwierdzenie4> = Książka <books> {books} została zarezerwowana;
+
+<book> = <books> {books};
+<author> = <authors> {authors};
+
+<books> = Bezsenność w Tokio | Sapiens Od zwierząt do bogów | 1Q84 | Zbrodnia i Kara |
+            Ojczyzna | Metro 2033 | Zwodniczy Punkt | Wywiad z wampirem | Wilkołak |
+            Ekstremista | Szóstka wron | Miasto z mgły | Zapis zarazy | Angst with happy ending |
+            Wiedźmin | Hobbit | Mitologia grecka i rzymska | Jak człowiek staje się mordercą |
+            Mroeczne archiwa | Alianci | Kuchnie świata | Kres czasów | Jak ocalić świat |
+            Mieszkaj boho | Potęga checklisty | Sen o okapi | ON | Przygody matematyka |
+            Dwanaście Stacji | Krew | Milczenie owiec | Duma i uprzedzenie | Władca Pierścieni |
+            Jane Eyre | Harry Potter i kamień filozoficzny | Zabić drozda | Wichrowe Wzgórza |
+            Rok 1984 | Mroczne materie | Wielkie nadzieje | Małe kobietki | Tessa D Urberville |
+            Paragraf 22 | Rebeka | Birdsong | Buszujący w zbożu | Żona podróżnika w czasie |
+            Miasteczko Middlemarch | Przeminęło z wiatrem | Wielki Gatsby | Samotnia |
+            Wojna i pokój | Autostopem przez Galaktykę | Znowu w Brideshead | Grona gniewu |
+            Alicja w Krainie Czarów | O czym szumią wierzby | Anna Karenina | David Copperfield |
+            Opowieści z Narnii | Emma | Perswazje | Lew Czarwnica i Stara Szafa;
+        
+<authors> = Marcin Bruczkowski | Harari Yuval Noah | Haruki Murakami | Fiodor Dostojewski |
+            Robert Anthony Salvatore | Dimitri Głuchowski | Dan Brown | Anna Rice | 
+            Wojciech Chmielarz | Remigiusz Mróz | Leigh Bardugo | Carlos Ruiz Zafon |
+            Tomasz Budzyński | Weronika Łodyga | Andrzej Sapkowski | J R R Tolkien |
+            Katarzyna Marciniak | Richard Taylor | Megan Rosenbloom | Piotr Zychowicz |
+            Ewelina Podrez Siama | Marzena Rogalska | Bill Gates | Justina Blakeney |
+            Atul Gawande | Mariana Leky | Diana Brzezińska | Stanisław Ulam | Tomasz Różycki |
+            Max Czornyj | Thomas Harris | Jane Austen | J R R Tolkien | Charlotte Bronte |
+            J K Rowling | Harper Lee | Emily Bronte | George Orwell | Philip Pullman | Charles Dickens |
+            Louisa M Alcott | Thomas Hardy | Joseph Heller | Daphne Du Maurier | Sebastian Faulks | J D Salinger |
+            Audrey Niffenegger | George Eliot | Margaret Mitchell | F Scott Fitzgerald | Charles Dickens |
+            Leo Tolstoy | Douglas Adams | Evelyn Waugh | John Steinbeck | Lewis Carroll |Kenneth Grahame |
+            Leo Tolstoy | Charles Dickens | C S Lewis | Jane Austen | Jane Austen | C S Lewis;

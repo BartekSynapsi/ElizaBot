@@ -1,0 +1,96 @@
+#JSGF V1.0 UTF-8 pl;
+
+grammar request;
+
+public <wypozyczenie1> = wypożyczenie książki <books> {books}*;
+public <wypozyczenie2> = interesuje mnie wypożyczenie <books> {books}*;
+public <wypozyczenie3> = interesuje mnie wypożyczenie książkę <books> {books}*;
+public <wypozyczenie4> = chciałbym wypożyczyć <books> {books}*;
+public <wypozyczenie5> = chciałbym wypożyczyć <books> {books} <authors> {authors}*;
+public <wypozyczenie6> = chciałabym wypożyczyć <books> {books}*;
+public <wypozyczenie7> = chciałabym wypożyczyć <books> {books} <authors> {authors}*;
+public <wypozyczenie8> = chciałabym wypożyczyć książkę <books> {books}*;
+public <wypozyczenie9> = chciałabym wypożyczyć książkę <books> {books} <authors> {authors}*;
+public <wypozyczenie10> = interesuje mnie wypożyczenie <books> {books} <authors> {authors}*;
+public <wypozyczenie11> = interesuje mnie wypożyczenie <books> {books}*;
+public <wypozyczenie12> = interesuje mnie wypożyczenie książkę <books> {books} <authors> {authors}*;
+public <wypozyczenie13> = interesuje mnie wypożyczenie książkę <books> {books}*;
+
+public <status1> = Czy książka <books> {books} jest dostępna*;
+public <status2> = Czy książka <books> {books} <authors> {authors} jest dostępna*;
+public <status3> = Dzień dobry Czy ksiażka <books> {books} jest dostępna*;
+public <status4> = Dzień dobry Czy książka <books> {books} <authors> {authors} jest dostępna*;
+public <status5> = Witam Czy ksiażka <books> {books} jest dostępna*;
+public <status6> = Witam Czy książka <books> {books} <authors> {authors} jest dostępna*;
+public <status7> = Chciałbym się upewnić czy książka <books> {books} jest dostępna*;
+public <status8> = Chciałbym się upewnić czy książka <books> {books} <authors> {authors} jest dostępna*;
+public <status9> = Chciałabym się upewnić czy książka <books> {books} jest dostępna*;
+public <status10> = Chciałabym się upewnić czy książka <books> {books} <authors> {authors} jest dostępna*;
+
+public <status11> = Czy biblioteka jest <status> {status}*;
+public <status12> = Czy biblioteka jest teraz <status> {status}*;
+public <status13> = Czy biblioteka jest <status> {status} w czasie pandemii*;
+
+public <status14> = Czy czytelnia jest <status> {status}*;
+public <status15> = Czy czytelnia jest teraz <status> {status}*;
+public <status16> = Czy biblioteka jest <status> {status} w czasie pandemii*;
+
+public <status17> = Jakie są dostępne gatunki <genres> {genres}*;
+public <status18> = Jakie są dostępne wydania <editions> {editions}*;
+
+
+
+public <zwrot1> = Chcę zwrócić <books> {books}*;
+public <zwrot2> = Chcę zwrócić <books> {books} <authors> {authors}*;
+public <zwrot3> = Chciałbym zwrócić <books> {books}*;
+public <zwrot4> = Chciałbym zwrócić <books> {books} <authors> {authors}*;
+public <zwrot5> = Chciałabym zwrócić <books> {books}*;
+public <zwrot6> = Chciałabym zwrócić <books> {books} <authors> {authors}*;
+
+public <rezerwacja1> = Chciałbym zarezerwować <books> {books}*;
+public <rezerwacja2> = Chciałabym zarezerwować <books> {books}*;
+public <rezerwacja3> = Chciałbym dokonać rezerwacji książki <books> {books}*;
+public <rezerwacja4> = Chciałabym dokonać rezerwacji ksiązki <books> {books}*;
+
+
+
+
+
+<books> = Bezsenność w Tokio | Sapiens Od zwierząt do bogów | 1Q84 | Zbrodnia i Kara |
+            Ojczyzna | Metro 2033 | Zwodniczy Punkt | Wywiad z wampirem | Wilkołak |
+            Ekstremista | Szóstka wron | Miasto z mgły | Zapis zarazy | Angst with happy ending |
+            Wiedźmin | Hobbit | Mitologia grecka i rzymska | Jak człowiek staje się mordercą |
+            Mroeczne archiwa | Alianci | Kuchnie świata | Kres czasów | Jak ocalić świat |
+            Mieszkaj boho | Potęga checklisty | Sen o okapi | ON | Przygody matematyka |
+            Dwanaście Stacji | Krew | Milczenie owiec | Duma i uprzedzenie | Władca Pierścieni |
+            Jane Eyre | Harry Potter i kamień filozoficzny | Zabić drozda | Wichrowe Wzgórza |
+            Rok 1984 | Mroczne materie | Wielkie nadzieje | Małe kobietki | Tessa D Urberville |
+            Paragraf 22 | Rebeka | Birdsong | Buszujący w zbożu | Żona podróżnika w czasie |
+            Miasteczko Middlemarch | Przeminęło z wiatrem | Wielki Gatsby | Samotnia |
+            Wojna i pokój | Autostopem przez Galaktykę | Znowu w Brideshead | Grona gniewu |
+            Alicja w Krainie Czarów | O czym szumią wierzby | Anna Karenina | David Copperfield |
+            Opowieści z Narnii | Emma | Perswazje | Lew Czarwnica i Stara Szafa;
+        
+<authors> = Marcin Bruczkowski | Harari Yuval Noah | Haruki Murakami | Fiodor Dostojewski |
+            Robert Anthony Salvatore | Dimitri Głuchowski | Dan Brown | Anna Rice | 
+            Wojciech Chmielarz | Remigiusz Mróz | Leigh Bardugo | Carlos Ruiz Zafon |
+            Tomasz Budzyński | Weronika Łodyga | Andrzej Sapkowski | J R R Tolkien |
+            Katarzyna Marciniak | Richard Taylor | Megan Rosenbloom | Piotr Zychowicz |
+            Ewelina Podrez Siama | Marzena Rogalska | Bill Gates | Justina Blakeney |
+            Atul Gawande | Mariana Leky | Diana Brzezińska | Stanisław Ulam | Tomasz Różycki |
+            Max Czornyj | Thomas Harris | Jane Austen | J R R Tolkien | Charlotte Bronte |
+            J K Rowling | Harper Lee | Emily Bronte | George Orwell | Philip Pullman | Charles Dickens |
+            Louisa M Alcott | Thomas Hardy | Joseph Heller | Daphne Du Maurier | Sebastian Faulks | J D Salinger |
+            Audrey Niffenegger | George Eliot | Margaret Mitchell | F Scott Fitzgerald | Charles Dickens |
+            Leo Tolstoy | Douglas Adams | Evelyn Waugh | John Steinbeck | Lewis Carroll |Kenneth Grahame |
+            Leo Tolstoy | Charles Dickens | C S Lewis | Jane Austen | Jane Austen | C S Lewis;
+            
+<status> = otwarta | zamknięta | otwarta w czasie pandemii | zamknięta do odwołania;
+
+<genres> = romans | thriller | ksiazka fantasy | horror | biografia | science fiction | dramat |
+            powiesc | basn | satyra | legenda | liryka | opowiadanie | komedia | epika | poezja | 
+            literatura piekna;
+        
+<editions> = 1993 | 1994 | 1995 | 1996 | 1997 | 1998 | 1999 | 2000 | 2001 | 2002 |2003 | 
+            2004 | 2005 | 2000;
+            

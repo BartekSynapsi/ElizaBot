@@ -2,7 +2,8 @@ from django.shortcuts import render
 from django.http.response import JsonResponse
 from django.views.decorators.http import require_http_methods
 from django.views.decorators.csrf import csrf_exempt
-from .eliza import el
+from .eliza import answer
+from .nlu import NLU
 
 
 def home(request):    
@@ -12,11 +13,8 @@ def home(request):
 @csrf_exempt
 def bot(request):
     message = request.POST['message']
-    if message in el.initials:
-        response = el.initial()
-    else:
-        response = el.respond(message)
-    
+    response = answer(message, NLU())
+    print(response)
     if response:
         return JsonResponse({"reply": response})
-    return JsonResponse({"reply": el.final()})
+    return JsonResponse({"Error": "error"})

@@ -1,0 +1,6 @@
+#JSGF V1.0 UTF-8 pl;
+
+grammar bye;
+
+public <bye> = <byes>;
+<byes> = to by było wszystko | Dziękuję bardzo za informację | Chyba wszytko już wiem | Dziękuję | Dziękujemy Życzymy miłej lektury | Dziękujemy i życzymy udanego czytania | W takim razie to wszystko skontaktuję się po zapoznaniu z regulaminem | Oczywiście czekam na kontakt;

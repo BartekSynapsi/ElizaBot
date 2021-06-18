@@ -1,0 +1,6 @@
+#JSGF V1.0 UTF-8 pl;
+
+grammar thankyou;
+
+public <thankyou> = <thanks>;
+<thanks> = Dziękuję to wszystko | To by było wszystko | Ok dziękuje | Dziękuję | Dziękuję bardzo | Dzięki | dziękuję za rozmowę | Dziękuję za informację;
