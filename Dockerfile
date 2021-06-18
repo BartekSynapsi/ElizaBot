@@ -10,4 +10,6 @@ COPY . .
 RUN python3 -m pip install --upgrade pip &&\
     pip install -r requirements.txt
 
-CMD gunicorn eliza.wsgi:application --bind 0.0.0.0:$PORT
+EXPOSE 8000
+
+CMD gunicorn eliza.wsgi:application --bind 0.0.0.0:8000
