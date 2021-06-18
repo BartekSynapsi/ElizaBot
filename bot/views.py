@@ -14,7 +14,6 @@ def home(request):
 def bot(request):
     message = request.POST['message']
     response = answer(message, NLU())
-    print(response)
     if response:
         return JsonResponse({"reply": response})
     return JsonResponse({"Error": "error"})

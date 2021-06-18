@@ -4,7 +4,7 @@ WORKDIR /usr/src/bot
 
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
-
+ENV PORT 8000
 COPY . .
 
 RUN python3 -m pip install --upgrade pip &&\
@@ -12,4 +12,4 @@ RUN python3 -m pip install --upgrade pip &&\
 
 EXPOSE 8000
 
-CMD gunicorn eliza.wsgi:application --bind 0.0.0.0:8000
+CMD gunicorn --bind 0.0.0.0:$PORT eliza.wsgi
